@@ -1,0 +1,15 @@
+lib/Alien/LibXML.pm
+
+t/00-use.t
+
+meta/people.pret
+meta/changes.pret
+meta/doap.pret
+meta/makefile.pret
+
+README
+Changes
+
+Build.PL
+MANIFEST			This list of files
+MANIFEST.SKIP                   That list of files
