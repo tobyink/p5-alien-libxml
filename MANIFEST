@@ -13,3 +13,5 @@ Changes
 Build.PL
 MANIFEST			This list of files
 MANIFEST.SKIP                   That list of files
+META.yml
+META.json
