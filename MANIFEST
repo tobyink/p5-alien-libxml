@@ -1,6 +1,9 @@
 lib/Alien/LibXML.pm
 
 t/00-use.t
+t/01-compiler.t
+t/tree1.c
+t/tree1.xml
 
 meta/people.pret
 meta/changes.pret
