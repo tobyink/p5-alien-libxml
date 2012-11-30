@@ -4,3 +4,9 @@
 	issued  2012-11-28;
 	label   "Preview - just noodling really".
 
+`Alien-LibXML 0.000_02 cpan:TOBYINK`
+	issued  2012-11-30;
+	changeset [
+		item "Include a meaty gcc test in the test suite."^^Packaging;
+	].
+

@@ -1,6 +1,6 @@
 package Alien::LibXML;
 use parent 'Alien::Base';
-our $VERSION = '0.000_01';
+our $VERSION = '0.000_02';
 
 =pod
 
