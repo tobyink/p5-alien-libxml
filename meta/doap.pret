@@ -4,7 +4,7 @@
 
 `Alien-LibXML`
 	:programming-language "Perl" ;
-	:shortdesc            "just coz";
+	:shortdesc            "install the C libxml2 library on your system";
 	:homepage             <https://metacpan.org/release/Alien-LibXML>;
 	:download-page        <https://metacpan.org/release/Alien-LibXML>;
 	:repository           [ a :HgRepository; :browse <https://bitbucket.org/tobyink/p5-alien-libxml> ];
