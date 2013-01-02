@@ -1,6 +1,10 @@
 package Alien::LibXML;
+use strict;
+use warnings;
 use parent 'Alien::Base';
-our $VERSION = '0.000_02';
+our $VERSION = '0.001';
+
+__END__
 
 =pod
 
@@ -8,7 +12,7 @@ our $VERSION = '0.000_02';
 
 =head1 NAME
 
-Alien::LibXML - just coz
+Alien::LibXML - install the C libxml2 library on your system
 
 =head1 DESCRIPTION
 
@@ -23,7 +27,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT, LICENCE AND DISCLAIMER OF WARRANTIES
 
-Copyright (c) 2012 Toby Inkster.
+Copyright (c) 2012-2013 Toby Inkster.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,5 +1,5 @@
 NAME
-    Alien::LibXML - just coz
+    Alien::LibXML - install the C libxml2 library on your system
 
 DESCRIPTION
     This is a very early test version of Alien::LibXML.
@@ -11,7 +11,7 @@ AUTHOR
     Toby Inkster <tobyink@cpan.org>.
 
 COPYRIGHT, LICENCE AND DISCLAIMER OF WARRANTIES
-    Copyright (c) 2012 Toby Inkster.
+    Copyright (c) 2012-2013 Toby Inkster.
 
     Permission is hereby granted, free of charge, to any person obtaining a
     copy of this software and associated documentation files (the

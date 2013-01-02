@@ -10,3 +10,10 @@
 		item "Include a meaty gcc test in the test suite."^^Packaging;
 	].
 
+`Alien-LibXML 0.001 cpan:TOBYINK`
+	issued  2013-01-02;
+	changeset [
+		item "Bundle example usage."^^Packaging;
+		item "Add better abstract."^^Documentation;
+	].
+
