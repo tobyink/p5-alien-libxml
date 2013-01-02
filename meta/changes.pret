@@ -15,5 +15,6 @@
 	changeset [
 		item "Bundle example usage."^^Packaging;
 		item "Add better abstract."^^Documentation;
+		item "Include example usage in SYNOPSIS."^^Documentation;
 	].
 

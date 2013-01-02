@@ -12,6 +12,7 @@ meta/makefile.pret
 
 README
 Changes
+examples/synopsis.pl
 
 Build.PL
 MANIFEST			This list of files

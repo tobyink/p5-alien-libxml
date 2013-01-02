@@ -9,6 +9,7 @@ Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 0.001  2013-01-02
 
  - (Documentation) Add better abstract.
+ - (Documentation) Include example usage in SYNOPSIS.
  - (Packaging) Bundle example usage.
 
 0.000_02  2012-11-30

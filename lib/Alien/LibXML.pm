@@ -14,9 +14,17 @@ __END__
 
 Alien::LibXML - install the C libxml2 library on your system
 
-=head1 DESCRIPTION
+=head1 SYNOPSIS
 
-This is a very early test version of Alien::LibXML.
+   use 5.010;
+   use strict;
+   use Alien::LibXML;
+   
+   my $alien = Alien::LibXML->new;
+   say $alien->libs;
+   say $alien->cflags;
+
+=head1 DESCRIPTION
 
 Hopefully at some point, L<XML::LibXML>'s installation scripts might use
 Alien::LibXML to locate or install the C libxml2 library.
