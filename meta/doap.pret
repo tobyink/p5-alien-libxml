@@ -7,7 +7,7 @@
 	:shortdesc            "install the C libxml2 library on your system";
 	:homepage             <https://metacpan.org/release/Alien-LibXML>;
 	:download-page        <https://metacpan.org/release/Alien-LibXML>;
-	:repository           [ a :HgRepository; :browse <https://bitbucket.org/tobyink/p5-alien-libxml> ];
+	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-alien-libxml> ];
 	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=Alien-LibXML>;
 	:created              2012-11-28;
 	:license              <http://dev.perl.org/licenses/>;
