@@ -28,6 +28,8 @@ sub file ($) { File::Spec->catfile(split m{/}, $_[0]) }
 my @libs   = shellwords( Alien::LibXML->libs );
 my @cflags = shellwords( Alien::LibXML->cflags );
 
+@libs = map { $_ =~ /^-L(.*)$/ && -d File::Spec->catdir($1, '.libs') ? ($_, "-L" . File::Spec->catdir($1, '.libs')) : $_ } @libs;
+
 diag "COMPILER: $CC";
 diag "CFLAGS:   @cflags";
 diag "LIBS:     @libs";

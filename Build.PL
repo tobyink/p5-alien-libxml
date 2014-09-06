@@ -21,8 +21,12 @@ my $builder = Alien::Base::ModuleBuild->new(
 		protocol => 'ftp',
 		host     => 'xmlsoft.org',
 		location => 'libxml2/',
-		pattern  => qr/^libxml2-sources-([\d\.]+)\.tar\.gz$/,
+		pattern  => qr/^libxml2-([\d\.]+)\.tar\.gz$/,
 	},
+	alien_build_commands => [
+                '%pconfigure --prefix=%s --without-python --enable-shared --enable-static --with-pic',
+                'make',
+	],
 );
 $builder->create_build_script;
 
