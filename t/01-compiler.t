@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 use Test::More;
+use Env qw( @PATH );
 
 BEGIN {
 	eval { require File::Which } or plan skip_all => 'need File::Which';
@@ -28,7 +29,12 @@ sub file ($) { File::Spec->catfile(split m{/}, $_[0]) }
 my @libs   = shellwords( Alien::LibXML->libs );
 my @cflags = shellwords( Alien::LibXML->cflags );
 
-@libs = map { $_ =~ /^-L(.*)$/ && -d File::Spec->catdir($1, '.libs') ? ($_, "-L" . File::Spec->catdir($1, '.libs')) : $_ } @libs;
+@libs = map { $_ =~ /^-L(.*)$/ && -d File::Spec->catfile($1, '.libs') ? ($_, "-L" . File::Spec->catfile($1, '.libs')) : $_ } @libs;
+
+if($^O eq 'MSWin32') {
+  # on windows, the dll must be in the PATH
+  push @PATH, $_ for map { my $p = $_; $p =~ s{^-L}{}; $p } grep { /^-L/ } @libs;
+}
 
 diag "COMPILER: $CC";
 diag "CFLAGS:   @cflags";
