@@ -37,9 +37,10 @@ diag "OUTPUT:   @{[ file 't/tree1.exe' ]}";
 diag "INPUT:    @{[ file 't/tree1.c' ]}";
 
 system(
-	$CC, @cflags, @libs,
+	$CC, @cflags,
 	-o => file 't/tree1.exe',
 	      file 't/tree1.c',
+	@libs,
 );
 
 ok -x 't/tree1.exe';
