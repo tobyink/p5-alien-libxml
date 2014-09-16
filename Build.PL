@@ -32,15 +32,20 @@ my $builder = Alien::Base::ModuleBuild->new(
 	alien_isolate_dynamic => 1,
 	sign => 1,
 	meta_merge => {
-		repository => {
-			type   => 'git',
-			url    => 'git://github.com/tobyink/p5-alien-libxml.git',
-			web    => 'https://github.com/tobyink/p5-alien-libxml',
+		resources => {
+			repository => {
+				type   => 'git',
+				url    => 'git://github.com/tobyink/p5-alien-libxml.git',
+				web    => 'https://github.com/tobyink/p5-alien-libxml',
+			},
+			homepage => 'https://metacpan.org/release/Alien-LibXML',
+			bugtracker => {
+				web    => 'http://rt.cpan.org/Dist/Display.html?Queue=Alien-LibXML',
+			},
 		},
-		homepage => 'https://metacpan.org/release/Alien-LibXML',
-		bugtracker => {
-			web    => 'http://rt.cpan.org/Dist/Display.html?Queue=Alien-LibXML',
-		},
+		x_contributors => [
+			'Graham Ollis (PLICEASE) <plicease@cpan.org>',
+		],
 	},
 );
 $builder->create_build_script;
