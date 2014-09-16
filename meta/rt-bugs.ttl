@@ -1,0 +1,21 @@
+@prefix dbug:  <http://ontologi.es/doap-bugs#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/NET/cpan-uri/dist/Alien-LibXML/project>
+	dbug:issue           <http://purl.org/NET/cpan-uri/rt/ticket/90273>.
+
+<http://purl.org/NET/cpan-uri/person/plicease>
+	a                    foaf:Agent;
+	foaf:mbox            <mailto:plicease@cpan.org>.
+
+<http://purl.org/NET/cpan-uri/rt/ticket/90273>
+	a                    dbug:Issue;
+	rdfs:label           "test t/01-compiler.t unable to find libxml2.so";
+	dbug:id              "90273";
+	dbug:page            <https://rt.cpan.org/Public/Bug/Display.html?id=90273>;
+	dc:created           "2013-11-11T23:26:22Z"^^xsd:dateTime;
+	dc:reporter          <http://purl.org/NET/cpan-uri/person/plicease>.
+

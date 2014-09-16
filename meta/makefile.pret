@@ -1,9 +1,0 @@
-# This file provides instructions for packaging.
-
-`Alien-LibXML`
-	perl_version_from m`Alien::LibXML`;
-	version_from      m`Alien::LibXML`;
-	readme_from       m`Alien::LibXML`;
-	test_requires     p`Test::More 0.61` ;
-	.
-

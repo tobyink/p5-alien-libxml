@@ -4,14 +4,21 @@ package MakeChanges {
 
 	use Moose;
 	use RDF::DOAP::ChangeSets;
+	use RDF::TrineX::Serializer::MockTurtleSoup;
 	use RDF::TrineX::Parser::Pretdsl;
 	use Path::Class qw( file dir );
 	use URI::file;
 
-	has destination => (
+	has changes_destination => (
 		is         => 'ro',
 		isa        => 'Path::Class::File',
 		default    => sub { file('Changes') },
+	);
+
+	has doap_destination => (
+		is         => 'ro',
+		isa        => 'Path::Class::File',
+		default    => sub { file('doap.ttl') },
 	);
 
 	has input_dir => (
@@ -47,13 +54,21 @@ package MakeChanges {
 	
 	sub run {
 		my $self = shift;
+		
 		my $dcs = RDF::DOAP::ChangeSets->new(
 			undef,
 			$self->input_model,
 			'current',
 		);
-		warn "Writing @{[ $self->destination ]}.\n";
-		$dcs->to_file($self->destination);
+		warn "Writing @{[ $self->changes_destination ]}.\n";
+		$dcs->to_file($self->changes_destination);
+		
+		my $ser = RDF::TrineX::Serializer::MockTurtleSoup->new;
+		warn "Writing @{[ $self->doap_destination ]}.\n";
+		$ser->serialize_model_to_file(
+			$self->doap_destination->openw,
+			$self->input_model,
+		);
 	}
 }
 

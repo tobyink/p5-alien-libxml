@@ -5,10 +5,7 @@ t/01-compiler.t
 t/tree1.c
 t/tree1.xml
 
-meta/people.pret
-meta/changes.pret
-meta/doap.pret
-meta/makefile.pret
+doap.ttl
 
 README
 Changes
