@@ -18,3 +18,32 @@
 		item "Include example usage in SYNOPSIS."^^Documentation;
 	].
 
+`Alien-LibXML 0.002 cpan:TOBYINK`
+	issued  2014-09-16;
+	changeset [
+		item "Make File::Which a test requirement rather than runtime requirement."^^Packaging;
+		item [
+			a dcs:Update;
+			label "Change pattern used when searching for libxml2 tarball on xmlsoft.org FTP server.";
+			dcs:blame cpan:PLICEASE;
+		];
+		item [
+			a dcs:Bugfix;
+			label "Work around possible libxml2 bug with uninstalled .pc file.";
+			dcs:blame cpan:PLICEASE;
+			dcs:fixes RT#90273;
+		];
+		item [
+			label "Don't build python libraries for libxml2 because they often result in permissions problems at installation time. (And we don't need them.)";
+			dcs:blame cpan:PLICEASE;
+		];
+		item [
+			label "Use static libraries for XS.";
+			dcs:blame cpan:PLICEASE;
+		];
+		item [
+			a dcs:Bugfix;
+			label "Win32-related fixes.";
+			dcs:blame cpan:PLICEASE;
+		];
+	].

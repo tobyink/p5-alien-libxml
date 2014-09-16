@@ -6,6 +6,24 @@ Home page:    <https://metacpan.org/release/Alien-LibXML>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Alien-LibXML>
 Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 
+0.002  2014-09-16
+
+ - (Bugfix) Win32-related fixes.
+   ++$PLICEASE
+ - (Bugfix) Work around possible libxml2 bug with uninstalled .pc file.
+   Fixes RT#90273
+   ++$PLICEASE
+ - (Packaging) Make File::Which a test requirement rather than runtime
+   requirement.
+ - (Update) Change pattern used when searching for libxml2 tarball on
+   xmlsoft.org FTP server.
+   ++$PLICEASE
+ - Don't build python libraries for libxml2 because they often result in
+   permissions problems at installation time. (And we don't need them.)
+   ++$PLICEASE
+ - Use static libraries for XS.
+   ++$PLICEASE
+
 0.001  2013-01-02
 
  - (Documentation) Add better abstract.
@@ -16,6 +34,6 @@ Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 
  - (Packaging) Include a meaty gcc test in the test suite.
 
-0.000_01  2012-11-28  # Preview - just noodling really
+0.000_01  2012-11-28  Preview - just noodling really
 
 
