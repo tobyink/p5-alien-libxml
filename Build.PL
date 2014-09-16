@@ -9,7 +9,9 @@ my $builder = Alien::Base::ModuleBuild->new(
 	configure_requires => {
 		'Alien::Base'   => '0.001',
 		'Module::Build' => '0.38',
-		'File::Which'   => 0,       # remove this for non-dev release
+	},
+	test_requires => {
+		'File::Which'   => 0,
 	},
 	requires => {
 		'perl'        => '5.8.9',
