@@ -31,7 +31,7 @@ my $builder = Alien::Base::ModuleBuild->new(
 	],
 	alien_isolate_dynamic => 1,
 	sign => 1,
-	resources => {
+	meta_merge => {
 		repository => {
 			type   => 'git',
 			url    => 'git://github.com/tobyink/p5-alien-libxml.git',
