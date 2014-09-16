@@ -30,6 +30,7 @@ my $builder = Alien::Base::ModuleBuild->new(
 		'make',
 	],
 	alien_isolate_dynamic => 1,
+	sign => 1,
 );
 $builder->create_build_script;
 
