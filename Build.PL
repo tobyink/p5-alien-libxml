@@ -24,8 +24,8 @@ my $builder = Alien::Base::ModuleBuild->new(
 		pattern  => qr/^libxml2-([\d\.]+)\.tar\.gz$/,
 	},
 	alien_build_commands => [
-                '%c --prefix=%s --without-python --enable-shared --enable-static',
-                'make',
+		'%c --prefix=%s --without-python --enable-shared --enable-static',
+		'make',
 	],
 	alien_isolate_dynamic => 1,
 );
