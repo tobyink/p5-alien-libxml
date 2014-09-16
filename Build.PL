@@ -39,7 +39,7 @@ my $builder = Alien::Base::ModuleBuild->new(
 		},
 		homepage => 'https://metacpan.org/release/Alien-LibXML',
 		bugtracker => {
-			web    => 'http://rt.cpan.org/Public/Dist/Display.html?Name=Alien-LibXML',
+			web    => 'http://rt.cpan.org/Dist/Display.html?Queue=Alien-LibXML',
 		},
 	},
 );
