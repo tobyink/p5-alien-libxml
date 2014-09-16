@@ -47,3 +47,12 @@
 			dcs:blame cpan:PLICEASE;
 		];
 	].
+
+`Alien-LibXML 0.003 cpan:TOBYINK`
+	issued  2014-09-16;
+	changeset [
+		item "Add repo link."^^Packaging;
+		item "Add homepage link."^^Packaging;
+		item "Add bug tracker link."^^Packaging;
+		item "Sign distribution."^^Packaging;
+	].
