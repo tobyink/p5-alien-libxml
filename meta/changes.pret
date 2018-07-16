@@ -56,3 +56,15 @@
 		item "Add bug tracker link."^^Packaging;
 		item "Sign distribution."^^Packaging;
 	].
+
+`Alien-LibXML 0.004 cpan:TOBYINK`
+	issued  2018-07-16;
+	changeset [
+		item [
+			a dcs:Update, dcs:Packaging, dcs:Bugfix;
+			label "Explicit dependency on Alien::Base::ModuleBuild.";
+			dcs:blame cpan:PLICEASE;
+			dcs:fixes RT#125808;
+			rdfs:seeAlso <https://github.com/tobyink/p5-alien-libxml/pull/5>;
+		];
+	].
